@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Vieux Kréole — restaurant créole Saint-Denis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <a href="#" class="navbar__logo">Le Vieux Kréole</a>
+    <a href="tel:+262 262 46 70 77" class="navbar__reserve">Réserver</a>
+    <button class="navbar__burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Full-screen nav overlay -->
+  <nav class="nav-overlay" id="navOverlay">
+    <ul class="nav-overlay__links">
+      <li><a href="#intro">Notre histoire</a></li>
+      <li><a href="#plats">La Carte</a></li>
+      <li><a href="#ambiance">Ambiance</a></li>
+      <li><a href="#avis">Avis</a></li>
+      <li><a href="#infos">Infos</a></li>
+      <li class="nav-overlay__cta"><a href="tel:+262 262 46 70 77">Réserver</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO — Giant outlined name + cinematic photo -->
+  <section class="hero" id="hero">
+    <h1 class="hero__title">Le Vieux Kréole</h1>
+    <div class="hero__image">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepyZ3doar3LX2Nuz-2dWVgx9jzClHP4tvH92DGurEqunvifbSiUg4StiGkW3yw4wDlmR2N3AGjo9x7k2LjXXcGkRYXH7OhiggbkIgz55Owv9sSAFqh8BKVXGW8cFk_myGnkjgQ=w800-h600-k-no" alt="Le Vieux Kréole — restaurant créole">
+    </div>
+    <div class="hero__bar">
+      <div class="hero__bar-left">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="#C8A96E" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span>4.5/5 — 460 avis</span>
+      </div>
+      <hr class="hero__bar-line">
+      <a href="#intro" class="hero__bar-right">
+        Découvrir <span class="hero__arrow">&darr;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- INTRO — Split: label left + text right -->
+  <section class="intro" id="intro">
+    <div class="intro__left reveal-left">
+      <span class="intro__number">01</span>
+      <span class="intro__label">Notre histoire</span>
+    </div>
+    <div class="intro__right reveal-right">
+      <p class="intro__text">Le Vieux Kréole est une institution bien-aimée à Saint-Denis, célèbre pour son ambiance chaleureuse et son charme intemporel. Depuis des années, nous perpétuons la véritable essence de la cuisine créole réunionnaise en magnifiant les saveurs authentiques et les traditions gastronomiques de notre belle île. Nos plats, préparés avec passion et respect, racontent l'histoire d'une région riche de culture et d'amour pour le partage. "" "" "" "" ""</p>
+      <blockquote class="intro__quote">
+        <p>"Cuisine excellente et accueil chaleureux. Les plats sont préparés avec des produits frais et locaux. Une très belle découverte à Saint-Denis."</p>
+        <cite>— David M.</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <!-- PLATS — Full-bleed + horizontal scroll -->
+  <section class="plats" id="plats">
+    <div class="plats__hero-image">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweoH054s5huygIHZmtGY2qY0own1ILDZbRfwjCi3rNKdaH7QQegmWuADolQJ0WqK1ADg8UKjh4LF_Pq14ERV23mRZ3dG1bI0dJI3DuSmjNH8Vy2QdfwL3whWlR0pkOzNf31cNnewoA=w800-h600-k-no" alt="Cuisine de Le Vieux Kréole" loading="lazy">
+    </div>
+    <div class="plats__header reveal-left">
+      <span class="plats__number">02</span>
+      <span class="plats__label">La Carte</span>
+    </div>
+    <div class="plats__scroll">
+      <div class="plats__track">
+        <div class="plats__card">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweoH054s5huygIHZmtGY2qY0own1ILDZbRfwjCi3rNKdaH7QQegmWuADolQJ0WqK1ADg8UKjh4LF_Pq14ERV23mRZ3dG1bI0dJI3DuSmjNH8Vy2QdfwL3whWlR0pkOzNf31cNnewoA=w800-h600-k-no" alt="Entrées" loading="lazy">
+          <span class="plats__card-name">Entrées</span>
+        </div>
+        <div class="plats__card">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweoyfj2wO5JJNlzOXm-SJn7d4wCI-pAT5LmcZHF5O6dS4Vn2QqAehg9kxhQrcDqZ5nUtykkin3GFzntuTInO00ctBL4La0On9ep6Dgub8EFknVw8HUfm6SDsFljyBM8pPpKDW5j49w=w800-h600-k-no" alt="Plats" loading="lazy">
+          <span class="plats__card-name">Plats</span>
+        </div>
+        <div class="plats__card">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwereQgSmm13PyRcj1JexynVHfngnOJIQGjaEGUEHY9Ulqvnp8WEtHwiVQPEAZ6pcioWNoY8KAxH_oFrC9OyHtnoKqvogOzlY_dI54V4TV5ZvVtGUZ1OVFyv6EoxJk1c7SEMpuIk7HQ=w800-h600-k-no" alt="Desserts" loading="lazy">
+          <span class="plats__card-name">Desserts</span>
+        </div>
+        <div class="plats__card">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerUCX1hNTTvIdATxDAw-_sRdvEer9k3KlZTZOj8mOSeqo2mAQBclOyK8D4OeCpBAx_8BcT3v-ilBMle6JPPe_ROTe8MKsJgAIbaFWfBrjWStPMMd-48lZXbO7j6nEPbDmTFED4VNescPjNI=w800-h600-k-no" alt="Boissons" loading="lazy">
+          <span class="plats__card-name">Boissons</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <!-- AMBIANCE — Two unequal images + quote -->
+  <section class="ambiance" id="ambiance">
+    <div class="ambiance__grid">
+      <div class="ambiance__img ambiance__img--tall reveal-left">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepzWPbvQ5IpW-ipyMI-VNzzj7yLyngTJhZhYL6Lr-gE9hcvvXhms44jGXM8Js6BIf9r2Js-A2Z9xpdTwyBwIzdBo4Ds96dAmdbFsOUfLDhP8xOmDTlnc-Lw2zXcbnS1shyadpi5=w800-h600-k-no" alt="Ambiance Le Vieux Kréole" loading="lazy">
+      </div>
+      <div class="ambiance__quote reveal-right">
+        <p>4.5/5 — 460 avis
+      
+      
+      
+        Découvrir &darr;
+      
+    
+  
+
+  
+  
+    
+      01
+      Notre histoire
+    
+    
+      Le Vieux Kréole est une institution bien-aimée à Saint-Denis, célèbre pour son ambiance chaleureuse et son charme intemporel. Depuis des années, nous perpétuons la véritable essence de la cuisine créole réunionnaise en magnifiant les saveurs authentiques et les traditions gastronomiques de notre belle île. Nos plats, préparés avec passion et respect, racontent l'histoire d'une région riche de culture et d'amour pour le partage. "" "" "" ""</p>
+      </div>
+      <div class="ambiance__img ambiance__img--short reveal-right">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweozOC2gFxyvQUEeuzE0Zf-_YILgIauXk2-P_AZsTPmMtLqTQiJYvKlgaCrUZ-nCeOviI6bv3sU2XrkP8IUSkACB9gCd2y05Hi15ANJFIhy1A1b25nfIY5LoiZoIyijhp42lHVNY=w800-h600-k-no" alt="Intérieur Le Vieux Kréole" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <!-- AVIS — Giant quote + two smaller -->
+  <section class="avis" id="avis">
+    <div class="avis__main reveal-up">
+      <blockquote class="avis__giant">
+        <p>"Cuisine excellente et accueil chaleureux. Les plats sont préparés avec des produits frais et locaux. Une très belle découverte à Saint-Denis."</p>
+        <cite>David M.</cite>
+      </blockquote>
+    </div>
+    <div class="avis__secondary">
+      <blockquote class="avis__small reveal-left">
+        <p>"Nous avons passé une soirée mémorable. Le service est impeccable et les saveurs sont au rendez-vous. On reviendra sans hésiter !"</p>
+        <cite>Véronique P.</cite>
+      </blockquote>
+      <blockquote class="avis__small reveal-right">
+        <p>"Cadre agréable et portions généreuses. Le rapport qualité-prix est vraiment bon. Je recommande vivement Le Vieux Kréole à tous les amateurs de bonne cuisine."</p>
+        <cite>Stéphane C.</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <!-- INFOS — Horaires + map + CTA -->
+  <section class="infos" id="infos">
+    <div class="infos__grid">
+      <div class="infos__horaires reveal-left">
+        <span class="infos__number">05</span>
+        <span class="infos__label">Horaires</span>
+        <table class="infos__table">
+          <tbody>
+            <tr data-day="1"><td>Lundi</td><td>Fermé</td></tr>
+            <tr data-day="2"><td>Mardi</td><td>—</td></tr>
+            <tr data-day="3"><td>Mercredi</td><td>—</td></tr>
+            <tr data-day="4"><td>Jeudi</td><td>11h30-14h00</td></tr>
+            <tr data-day="5"><td>Vendredi</td><td>—</td></tr>
+            <tr data-day="6"><td>Samedi</td><td>11h30-14h00</td></tr>
+            <tr data-day="0"><td>Dimanche</td><td>Fermé</td></tr>
+          </tbody>
+        </table>
+        <p class="infos__address">5 Rue du Dancing, 97490 Saint-Denis</p>
+      </div>
+      <div class="infos__map reveal-right">
+        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=-20.88,55.45&zoom=15" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation de Le Vieux Kréole"></iframe>
+      </div>
+    </div>
+    <div class="infos__actions">
+      <a href="tel:+262 262 46 70 77" class="infos__link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Appeler <span class="infos__link-arrow">&rarr;</span>
+      </a>
+      <a href="https://wa.me/262262467077" class="infos__link" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        WhatsApp <span class="infos__link-arrow">&rarr;</span>
+      </a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=-20.88,55.45" class="infos__link" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Y aller <span class="infos__link-arrow">&rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <hr class="footer__rule">
+    <div class="footer__inner">
+      <span class="footer__name">Le Vieux Kréole</span>
+      <span class="footer__address">5 Rue du Dancing, 97490 Saint-Denis</span>
+      <span class="footer__credit">Site par <a href="https://lynopi.com" target="_blank" rel="noopener">Lynopi</a></span>
+    </div>
+  </footer>
+
+  <!-- STICKY MOBILE CTA -->
+  <div class="mobile-cta" id="mobileCta">
+    <a href="tel:+262 262 46 70 77" class="mobile-cta__btn mobile-cta__btn--call">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>Appeler</span>
+    </a>
+    <a href="https://wa.me/262262467077" class="mobile-cta__btn mobile-cta__btn--wa" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=-20.88,55.45" class="mobile-cta__btn mobile-cta__btn--map" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span>Y aller</span>
+    </a>
+  </div>
+
+  <script>
+    (function() {
+      'use strict';
+      var burger = document.getElementById('burgerBtn');
+      var overlay = document.getElementById('navOverlay');
+      var overlayLinks = overlay.querySelectorAll('a');
+      burger.addEventListener('click', function() {
+        var isOpen = overlay.classList.toggle('is-open');
+        burger.classList.toggle('is-open');
+        burger.setAttribute('aria-expanded', isOpen);
+        document.body.classList.toggle('menu-open', isOpen);
+      });
+      overlayLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          overlay.classList.remove('is-open');
+          burger.classList.remove('is-open');
+          burger.setAttribute('aria-expanded', 'false');
+          document.body.classList.remove('menu-open');
+        });
+      });
+      var navbar = document.getElementById('navbar');
+      var lastScroll = 0;
+      window.addEventListener('scroll', function() {
+        var s = window.pageYOffset;
+        navbar.classList.toggle('is-scrolled', s > 80);
+        if (s > 300) navbar.classList.toggle('is-hidden', s > lastScroll);
+        lastScroll = s;
+      }, { passive: true });
+      var today = new Date().getDay();
+      document.querySelectorAll('.infos__table tr[data-day]').forEach(function(row) {
+        if (parseInt(row.getAttribute('data-day')) === today) row.classList.add('is-today');
+      });
+      var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var reveals = document.querySelectorAll('.reveal-left, .reveal-right, .reveal-up');
+      if (!prefersReduced && 'IntersectionObserver' in window) {
+        var obs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('is-visible'); obs.unobserve(e.target); } });
+        }, { threshold: 0.1, rootMargin: '0px 0px -80px 0px' });
+        reveals.forEach(function(el) { obs.observe(el); });
+      } else {
+        reveals.forEach(function(el) { el.classList.add('is-visible'); });
+      }
+      var heroImg = document.querySelector('.hero__image img');
+      if (heroImg && !prefersReduced) {
+        window.addEventListener('scroll', function() {
+          var y = window.pageYOffset;
+          if (y < window.innerHeight * 1.5) heroImg.style.transform = 'scale(1.05) translateY(' + (y * 0.15) + 'px)';
+        }, { passive: true });
+      }
+      document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+        a.addEventListener('click', function(e) {
+          var id = this.getAttribute('href'); if (id === '#') return;
+          var t = document.querySelector(id); if (t) { e.preventDefault(); window.scrollTo({ top: t.getBoundingClientRect().top + window.pageYOffset - 100, behavior: 'smooth' }); }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
